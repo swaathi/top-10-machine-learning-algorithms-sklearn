@@ -7,4 +7,4 @@ model = RandomForestClassifier()
 model.fit(Xtrain, ytrain)
 ypred = model.predict(Xtest)
 
-print("\n\nRandom Forest Clasifier Accuracy Score:", Base.accuracy_score(ytest, ypred), "%")
+print("\n\nRandom Forest Classifier Accuracy Score:", Base.accuracy_score(ytest, ypred), "%")

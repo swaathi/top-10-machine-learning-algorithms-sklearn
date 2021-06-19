@@ -20,6 +20,17 @@ class Base:
     # split
     return base.split()
 
+  @staticmethod
+  def clean():
+    base = Base()
+
+    # clean
+    base.drop_useless_columns()
+    base.one_hot_encode_columns()
+    base.fill_in_nan()
+
+    return base.df
+
   def __init__(self, path='titanic/train.csv'):
     self.df = pd.read_csv(path)
 
